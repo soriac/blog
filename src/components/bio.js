@@ -1,54 +1,44 @@
-/**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 
+import styled from '@emotion/styled';
 import { rhythm } from "../utils/typography"
 
+const Container = styled.div`
+    display: flex;
+    padding: 10px;
+    margin-bottom: ${rhythm(1)};
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border-radius: 5px;
+`
+
+const StyledImage = styled(Image)`
+  min-width: 100px;
+  max-height: 100px;
+  align-self: center;
+  margin-right: 10px;
+`
+
 function Bio() {
+  const data = useStaticQuery(bioQuery);
+  const author = data.site.siteMetadata.author;
+
   return (
-    <StaticQuery
-      query={bioQuery}
-      render={data => {
-        const { author, social } = data.site.siteMetadata
-        return (
-          <div
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
-            }}
-          >
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
-            <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
-            </p>
-          </div>
-        )
-      }}
-    />
+    <Container>
+      <StyledImage
+        fixed={data.avatar.childImageSharp.fixed}
+        alt={author}
+        imgStyle={{ 
+          borderRadius: `50%`,
+        }}
+      />
+      <p>
+        Escrito por <strong>{author}</strong>, desde Buenos Aires, Argentina.
+        Trabajo en Buenos Aires como full-stack dev y dando talleres de React.
+      </p>
+    </Container>
   )
 }
 
@@ -56,7 +46,7 @@ const bioQuery = graphql`
   query BioQuery {
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
       childImageSharp {
-        fixed(width: 50, height: 50) {
+        fixed(width: 200, height: 200) {
           ...GatsbyImageSharpFixed
         }
       }
