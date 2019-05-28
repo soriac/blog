@@ -15,15 +15,12 @@ const query = graphql`
 
 const Title = ({big}) => {
     const data = useStaticQuery(query);
-    console.log(data)
     const title = data.site.siteMetadata.title;
 
-    console.log(title)
-
-    if (big) 
-        return <BigTitle title={title} />
+    if (big)
+        return <BigTitle title={title} />;
     else
-        return <SmallTitle title={title} />
+        return <SmallTitle title={title} />;
 };
 
 const SmallTitle = ({title}) => {

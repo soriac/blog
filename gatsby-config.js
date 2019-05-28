@@ -3,7 +3,7 @@ module.exports = {
     title: `JS y React en Español`,
     author: `Cristian Soria`,
     description: `Un espacio para aprender JS y React`,
-    siteUrl: `soriac.github.io`,
+    siteUrl: `https://soriac.github.io`,
     social: { }
   },
   plugins: [
