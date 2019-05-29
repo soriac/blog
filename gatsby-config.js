@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/blog',
   siteMetadata: {
     title: `JS y React en Español`,
     author: `Cristian Soria`,
