@@ -44,7 +44,7 @@ Aunque Gatsby nos facilita el uso de muchas tecnologías, no es lo mas práctico
 
 Para crear un proyecto basado en un starter simplemente agregamos la URL del starter como argumento cuando lo creamos, por ejemplo:
 ```bash
-gatsby new blog https://github.com/gatsbyjs/gatsby-starter-blog
+$ gatsby new blog https://github.com/gatsbyjs/gatsby-starter-blog
 ```
 
 Con este starter tenemos preparado un blog básico con Gatsby!
@@ -138,7 +138,7 @@ Donde \<username\> es tu usuario de github.
 
 Una vez que hayamos creado el repositorio podemos agregar el remote, con 
 ```bash
-git remote add origin https://github.com/<username>/<username>.github.io.git
+$ git remote add origin https://github.com/<username>/<username>.github.io.git
 ```
 
 También debemos instalar `gh-pages`. Este es un paquete que se encarga de convertir y subir los archivos correctamente a nuestro repo.

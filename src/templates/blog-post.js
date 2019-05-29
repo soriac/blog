@@ -21,15 +21,22 @@ const Container = styled.div`
   }
 
   h2, h3 {
-    margin: 0;
-    margin-top: ${rhythm(1)}
+    margin: ${rhythm(1)} 0 0;
   }
-`
+  
+  code {
+    border-radius: 0 !important;
+  }
+  
+  pre {
+    box-shadow: 0 0 10px rgba(0, 0, 0.25);
+  }
+`;
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const post = this.props.data.markdownRemark;
+    const siteTitle = this.props.data.site.siteMetadata.title;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
