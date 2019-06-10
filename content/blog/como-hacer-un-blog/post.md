@@ -170,4 +170,4 @@ $ npm run deploy
 
 Felicitaciones! Ya podes compartirle tu blog a todos tus amigos y familiares, y molestarlos cada vez que hagas un post.
 
-[Podés encontrar el código fuente de mi blog en Github](https://github.com/soriac), y podés usarlo para lo que quieras. Yo le hice varias modificaciones más de las que hablé en este post, y seguramente le voy a hacer muchas otras cuando tenga más tiempo.
+[Podés encontrar el código fuente de mi blog en Github](https://github.com/soriac/blog), y podés usarlo para lo que quieras. Yo le hice varias modificaciones más de las que hablé en este post, y seguramente le voy a hacer muchas otras cuando tenga más tiempo.

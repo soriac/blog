@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `JS y React en Español`,
+    title: `SORIAC`,
     author: `Cristian Soria`,
     description: `Un espacio para aprender JS y React`,
-    siteUrl: `soriac.github.io`,
-    social: { }
+    siteUrl: `https://soriac.github.io`,
+    social: {
+      twitter: ``
+    }
   },
   plugins: [
     {

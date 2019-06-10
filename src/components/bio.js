@@ -30,13 +30,15 @@ function Bio() {
       <StyledImage
         fixed={data.avatar.childImageSharp.fixed}
         alt={author}
-        imgStyle={{ 
+        imgStyle={{
           borderRadius: `50%`,
         }}
       />
       <p>
-        Escrito por <strong>{author}</strong>, desde Buenos Aires, Argentina.
-        Trabajo en Buenos Aires como full-stack dev y dando talleres de React.
+        Escrito por <a href="https://www.linkedin.com/in/cristian-soria/">{author}</a>, desde Buenos Aires, Argentina.
+        Trabajo en como full-stack dev y dando talleres de React. <br />
+        Estoy preparando un curso de desarrollo full-stack, para fines de Julio de 2019, con <a href="https://thejavalistener.com">Pablo Sznajdleder</a>,
+        autor del libro <a href="https://www.alfaomega.com.mx/default/catalogsearch/result/?q=sznajdleder">Java a Fondo</a>.
       </p>
     </Container>
   )
