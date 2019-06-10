@@ -1,9 +1,10 @@
 module.exports = {
+  pathPrefix: '/blog',
   siteMetadata: {
     title: `SORIAC`,
     author: `Cristian Soria`,
     description: `Un espacio para aprender JS y React`,
-    siteUrl: `https://soriac.github.io`,
+    siteUrl: `https://soriac.github.io/blog`,
     social: {
       twitter: ``
     }

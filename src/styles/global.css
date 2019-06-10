@@ -1,14 +1,15 @@
+html {
+    background-color: #D05655;
+
+}
+
 body {
     background: rgb(99,0,0);
     background: linear-gradient(
-        180deg,
-        rgba(99,0,0,1) 0,
-        rgba(129,50,19,1) 100px,
-        rgba(158,89,38,1) 200px,
-        rgba(185,129,63,1) 300px,
-        rgba(210,170,93,1) 400px,
-        rgba(233,212,128,1) 500px,
-        rgba(255,255,168,1) 600px) no-repeat;
+        #0D191D 0,
+        #283656 200px,
+        #834273 400px,
+        #D05655 600px) no-repeat;
 }
 
 html {

@@ -25,10 +25,15 @@ class Layout extends React.Component {
           {children}
         </main>
 
-        <footer style={{marginTop: rhythm(1)}}>
+        <footer style={{marginTop: rhythm(1), color: 'white'}}>
           © {new Date().getFullYear()}, Hecho con
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org"
+             style ={{
+               textDecoration: `none`,
+               color: `white`
+             }}
+          >Gatsby</a>
         </footer>
       </div>
     )
