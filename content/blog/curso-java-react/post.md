@@ -10,4 +10,4 @@ El frontend es la parte que interactúa con el usuario. Le permite ingresar dato
 
 Estamos trabajando con [Pablo Sznajdleder](http://www.thejavalistener.com), autor del libro [Java a Fondo](https://www.alfaomega.com.mx/default/catalogsearch/result/?q=sznajdleder), para dar un curso presencial, por internet, de desarrollo tanto de backend como de frontend.
 
-[En este post de su blog](http://www.thejavalistener.com/2019/05/curso-java-react-full-stack-ok.html) pueden encontrar toda la información sobre el curso y cómo anotarse.
+[En este post de su blog](http://www.thejavalistener.com/2019/05/curso-java-react-full-stack-ok.html) pueden encontrar toda la información sobre el curso. Si te interesa anotarte, podés contactarnos [por el formulario de contacto, en el blog de Pablo](https://thejavalistener.blogspot.com/2019/05/contacto.html).
